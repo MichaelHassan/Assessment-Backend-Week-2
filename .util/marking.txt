@@ -3,22 +3,40 @@ platform linux -- Python 3.12.4, pytest-8.3.2, pluggy-1.5.0
 rootdir: /home/runner/work/Assessment-Backend-Week-2/Assessment-Backend-Week-2/marine_experiments
 collected 100 items
 
-test_api.py ..................FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 60%]
-FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                                 [100%]
+test_api.py ............................................................ [ 60%]
+...............FFF...FFFFFFF.F.FFFFFFFFF                                 [100%]
 
-======================== 82 failed, 18 passed in 12.61s ========================
+======================== 20 failed, 80 passed in 10.96s ========================
 ************* Module api
-marine_experiments/api.py:78:0: C0301: Line too long (151/100) (line-too-long)
-marine_experiments/api.py:82:0: C0301: Line too long (101/100) (line-too-long)
-marine_experiments/api.py:87:0: C0301: Line too long (101/100) (line-too-long)
-marine_experiments/api.py:92:0: C0301: Line too long (107/100) (line-too-long)
+marine_experiments/api.py:128:0: C0301: Line too long (163/100) (line-too-long)
+marine_experiments/api.py:181:0: C0301: Line too long (102/100) (line-too-long)
 marine_experiments/api.py:48:4: W0621: Redefining name 'subjects' from outer scope (line 32) (redefined-outer-name)
-marine_experiments/api.py:105:8: W0621: Redefining name 'experiment' from outer scope (line 57) (redefined-outer-name)
+marine_experiments/api.py:163:12: W0621: Redefining name 'experiment' from outer scope (line 57) (redefined-outer-name)
+marine_experiments/api.py:126:23: W0109: Duplicate key 'error' in dictionary (duplicate-key)
+marine_experiments/api.py:134:23: W0109: Duplicate key 'error' in dictionary (duplicate-key)
+marine_experiments/api.py:134:48: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+marine_experiments/api.py:141:23: W0109: Duplicate key 'error' in dictionary (duplicate-key)
+marine_experiments/api.py:145:19: W0718: Catching too general exception Exception (broad-exception-caught)
+marine_experiments/api.py:146:23: W0109: Duplicate key 'error' in dictionary (duplicate-key)
+marine_experiments/api.py:155:23: W0109: Duplicate key 'error' in dictionary (duplicate-key)
+marine_experiments/api.py:173:15: C0123: Use isinstance() rather than type() for a typecheck. (unidiomatic-typecheck)
+marine_experiments/api.py:175:15: C0117: Consider changing "not int(data.get('subject_id')) > 0" to "int(data.get('subject_id')) <= 0" (unnecessary-negation)
+marine_experiments/api.py:183:15: W0718: Catching too general exception Exception (broad-exception-caught)
+marine_experiments/api.py:192:15: W0718: Catching too general exception Exception (broad-exception-caught)
+marine_experiments/api.py:188:15: C0123: Use isinstance() rather than type() for a typecheck. (unidiomatic-typecheck)
+marine_experiments/api.py:190:15: C0117: Consider changing "not int(data.get('score')) > 0" to "int(data.get('score')) <= 0" (unnecessary-negation)
+marine_experiments/api.py:195:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+marine_experiments/api.py:57:0: R0911: Too many return statements (13/6) (too-many-return-statements)
+marine_experiments/api.py:57:0: R0912: Too many branches (26/12) (too-many-branches)
+marine_experiments/api.py:57:0: R0915: Too many statements (61/50) (too-many-statements)
+marine_experiments/api.py:206:0: C0116: Missing function or method docstring (missing-function-docstring)
+marine_experiments/api.py:206:23: W0622: Redefining built-in 'id' (redefined-builtin)
+marine_experiments/api.py:226:8: W0621: Redefining name 'experiment' from outer scope (line 57) (redefined-outer-name)
 marine_experiments/api.py:3:0: W0611: Unused datetime imported from datetime (unused-import)
 marine_experiments/api.py:6:0: W0611: Unused sql imported from psycopg2 (unused-import)
 ************* Module database_functions
 marine_experiments/database_functions.py:16:0: C0304: Final newline missing (missing-final-newline)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.36/10 (previous run: 8.36/10, +0.00)
+Your code has been rated at 7.61/10 (previous run: 7.61/10, +0.00)
 
