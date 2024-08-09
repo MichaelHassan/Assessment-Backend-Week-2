@@ -3,17 +3,22 @@ platform linux -- Python 3.12.4, pytest-8.3.2, pluggy-1.5.0
 rootdir: /home/runner/work/Assessment-Backend-Week-2/Assessment-Backend-Week-2/marine_experiments
 collected 100 items
 
-test_api.py FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF.FF [ 60%]
+test_api.py ..................FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF [ 60%]
 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                                 [100%]
 
-======================== 99 failed, 1 passed in 11.18s =========================
+======================== 82 failed, 18 passed in 12.61s ========================
 ************* Module api
+marine_experiments/api.py:78:0: C0301: Line too long (151/100) (line-too-long)
+marine_experiments/api.py:82:0: C0301: Line too long (101/100) (line-too-long)
+marine_experiments/api.py:87:0: C0301: Line too long (101/100) (line-too-long)
+marine_experiments/api.py:92:0: C0301: Line too long (107/100) (line-too-long)
+marine_experiments/api.py:48:4: W0621: Redefining name 'subjects' from outer scope (line 32) (redefined-outer-name)
+marine_experiments/api.py:105:8: W0621: Redefining name 'experiment' from outer scope (line 57) (redefined-outer-name)
 marine_experiments/api.py:3:0: W0611: Unused datetime imported from datetime (unused-import)
-marine_experiments/api.py:5:0: W0611: Unused request imported from flask (unused-import)
 marine_experiments/api.py:6:0: W0611: Unused sql imported from psycopg2 (unused-import)
 ************* Module database_functions
 marine_experiments/database_functions.py:16:0: C0304: Final newline missing (missing-final-newline)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.89/10 (previous run: 7.89/10, +0.00)
+Your code has been rated at 8.36/10 (previous run: 8.36/10, +0.00)
 
